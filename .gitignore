@@ -1,3 +1,4 @@
+<<<<<<< OURS
 # Logs
 logs
 *.log
@@ -21,7 +22,6 @@ coverage
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-bundles
 dist
 .awcache
 .tmp
@@ -43,3 +43,5 @@ Status API Training Shop Blog About Pricing
 
 # Jspm bundle
 src/demo/app-bundle.*
+/nbproject/
+/.env
