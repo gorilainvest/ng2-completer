@@ -11,6 +11,7 @@ export abstract class CompleterBaseData extends Subject<CompleterItem[] | null> 
     protected _titleField: string;
     protected _descriptionField: string;
     protected _imageField: string;
+    private formatterFunction:Function;
 
     constructor() {
         super();
@@ -44,7 +45,7 @@ export abstract class CompleterBaseData extends Subject<CompleterItem[] | null> 
         let image: string | null = null;
         let formattedText: string;
         let formattedDesc: string | null = null;
-
+        
         if (this._titleField) {
             formattedText = this.extractTitle(data);
         } else {
@@ -70,6 +71,10 @@ export abstract class CompleterBaseData extends Subject<CompleterItem[] | null> 
             originalObject: data
         } as CompleterItem;
 
+    }
+    
+    public responseFormatter(formatterFunction:Function){
+        this.formatterFunction = formatterFunction;
     }
 
     protected extractMatches(data: any[], term: string) {
@@ -127,6 +132,17 @@ export abstract class CompleterBaseData extends Subject<CompleterItem[] | null> 
                 }
             }
         }
-        return results;
+        return this.executeFormatterFunction(results);
+    }
+    
+    private executeFormatterFunction(data:CompleterItem[]): CompleterItem[]{
+        try{
+            let fn = this.formatterFunction;
+            if(typeof fn !== 'undefined' && fn !== null){
+                let temp:CompleterItem[] = fn(data);
+                return temp;
+            }
+        }catch(e){console.warn(e);}
+        return data;
     }
 }

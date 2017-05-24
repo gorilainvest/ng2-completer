@@ -1,6 +1,6 @@
 <h1 style="margin-top: 1em;" class="page">Completer Native</h1>
 
-<h3>Local data with image</h3>
+<!--<h3>Local data with image</h3>
 <p>Local data with countries - using <code>image</code>,
 	<code>matchClass</code>,
 	<code>maxLength</code>, <code>autofocus</code> and limit of the dropdown length in CSS</p>
@@ -292,6 +292,34 @@
 			</div>
 		</div>
 	</div>
+</div>-->
+
+<h3>Remote data with response formatter</h3>
+<p>
+    Remote data of countries with 
+    <code>minSearchLength</code>
+    and <code>responseFormatter</code>
+</p>
+
+
+<div class="card">
+	<div class="card-block">
+		<div class="form-group row">
+			<div class="col-5">
+				<ng2-completer 
+                    [dataService]="dataRemote3" 
+                    [minSearchLength]="1"
+                    [placeholder]="'Search for country'"
+                    (selected)="onCountrySelected2($event)"
+                    [inputClass]="'form-control'">
+				</ng2-completer>
+			</div>
+			<div class="col-6">
+				<p class="form-control-static"><b> {{countryName3}}</b></p>
+			</div>
+		</div>
+	</div>
 </div>
+
 
 <p style="margin-bottom: 10em;"></p>

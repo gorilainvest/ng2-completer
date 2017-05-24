@@ -68,9 +68,12 @@ export class NativeCmp {
     private dataService: CompleterData;
     private dataService2: CompleterData;
     private countryName2 = "";
+    private countryName3 = "";
+//    private country3Description = "";
     private quote: string | undefined = "";
     private dataRemote: CompleterData;
     private dataRemote2: RemoteData;
+    private dataRemoteResponseFormatter: RemoteData;
     private dataService3: CompleterData;
     private dataService4: CompleterData;
     private customData: CustomData;
@@ -91,6 +94,7 @@ export class NativeCmp {
             return `http://www.omdbapi.com/?s=${term}&type=movie`;
         });
         this.dataRemote2.dataField("Search");
+        this.setDataResponseFormatter(completerService);
         // For async local the source can also be HTTP request
         // let source = http.get("https://raw.githubusercontent.com/oferh/ng2-completer/master/demo/res/data/countries.json?").map((res: any) => res.json());
         let source = Observable.from([this.countries]).delay(3000);
@@ -98,12 +102,34 @@ export class NativeCmp {
         this.customData = new CustomData(http);
         this.dataService4 = completerService.local(this.colors, null, null);
     }
+    
+    private setDataResponseFormatter(completerService: CompleterService){
+        this.dataRemoteResponseFormatter = completerService.remote(
+            "https://raw.githubusercontent.com/oferh/ng2-completer/master/demo/res/data/countries.json?",
+            "name",
+            "name");
+        this.dataRemoteResponseFormatter.descriptionField("description");
+        this.dataRemoteResponseFormatter.responseFormatter(function(data:CompleterItem[]):CompleterItem[]{
+            for(let i in data){
+                data[i]['description'] = 'code:' + data[i].originalObject.code;
+            }
+            return data;
+        });
+    }
 
     public onCountrySelected(selected: CompleterItem) {
         if (selected) {
             this.countryName2 = selected.title;
         } else {
             this.countryName2 = "";
+        }
+    }
+    
+    public onCountrySelected2(selected: CompleterItem) {
+        if (selected) {
+            this.countryName3 = selected.title;
+        } else {
+            this.countryName3 = "";
         }
     }
 
@@ -130,6 +156,10 @@ export class NativeCmp {
 
     public onFocus() {
         this.openCloseExample.focus();
+    }
+    
+    public onResponseReady(data:any){
+        console.log(data);
     }
 
 }

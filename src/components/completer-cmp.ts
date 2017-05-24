@@ -139,6 +139,7 @@ export class CompleterCmp implements OnInit, ControlValueAccessor, AfterViewChec
 
     @Output() public selected = new EventEmitter<CompleterItem>();
     @Output() public highlighted = new EventEmitter<CompleterItem>();
+    @Output() public responseFormatter = new EventEmitter<Array<CompleterItem>>();
     @Output() public blur = new EventEmitter<void>();
     @Output("focus") public focusEvent = new EventEmitter<void>();
     @Output() public opened = new EventEmitter<boolean>();
