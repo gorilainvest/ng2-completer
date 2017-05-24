@@ -9,10 +9,8 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 import { Headers, RequestOptions } from "@angular/http";
-import { Observable } from "rxjs/Observable";
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/catch";
-import "rxjs/add/observable/of";
 import { CompleterBaseData } from "./completer-base-data";
 var RemoteData = (function (_super) {
     __extends(RemoteData, _super);
@@ -76,7 +74,7 @@ var RemoteData = (function (_super) {
         })
             .catch(function (err) {
             _this.error(err);
-            return Observable.of(null);
+            return null;
         })
             .subscribe();
     };

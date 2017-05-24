@@ -23,7 +23,6 @@ var CtrList = (function () {
         this.ctrListPause = PAUSE;
         this.ctrListAutoMatch = false;
         this.ctrListAutoHighlight = false;
-        this.ctrListDisplaySearching = true;
         // private results: CompleterItem[] = [];
         this.term = null;
         // private searching = false;
@@ -31,11 +30,10 @@ var CtrList = (function () {
         this.clearTimer = null;
         this.ctx = new CtrListContext([], false, false, false);
         this._initialValue = null;
-        this.viewRef = null;
     }
     CtrList.prototype.ngOnInit = function () {
         this.completer.registerList(this);
-        this.viewRef = this.viewContainer.createEmbeddedView(this.templateRef, new CtrListContext([], false, false, false));
+        this.viewContainer.createEmbeddedView(this.templateRef, new CtrListContext([], false, false, false));
     };
     Object.defineProperty(CtrList.prototype, "dataService", {
         set: function (newService) {
@@ -52,16 +50,15 @@ var CtrList = (function () {
                         results[0].title.toLocaleLowerCase() === _this.term.toLocaleLowerCase()) {
                         // Do automatch
                         _this.completer.onSelected(results[0]);
-                        return;
                     }
                     if (_this._initialValue) {
                         _this.initialValue = _this._initialValue;
                         _this._initialValue = null;
                     }
-                    _this.refreshTemplate();
                     if (_this.ctrListAutoHighlight) {
                         _this.completer.autoHighlightIndex = _this.getBestMatchIndex();
                     }
+                    _this.refreshTemplate();
                 });
             }
         },
@@ -94,9 +91,7 @@ var CtrList = (function () {
                 this.searchTimer = null;
             }
             if (!this.ctx.searching) {
-                if (this.ctrListDisplaySearching) {
-                    this.ctx.results = [];
-                }
+                this.ctx.results = [];
                 this.ctx.searching = true;
                 this.ctx.searchInitialized = true;
                 this.refreshTemplate();
@@ -139,7 +134,6 @@ var CtrList = (function () {
             this.dataService.cancel();
         }
         this.viewContainer.clear();
-        this.viewRef = null;
     };
     CtrList.prototype.searchTimerComplete = function (term) {
         // Begin the search
@@ -164,23 +158,16 @@ var CtrList = (function () {
         return Observable.throw(errMsg);
     };
     CtrList.prototype.refreshTemplate = function () {
-        // create the template if it doesn't exist
-        if (!this.viewRef) {
-            this.viewRef = this.viewContainer.createEmbeddedView(this.templateRef, this.ctx);
-        }
-        else {
-            // refresh the template
-            this.viewRef.context.isOpen = this.ctx.isOpen;
-            this.viewRef.context.results = this.ctx.results;
-            this.viewRef.context.searching = this.ctx.searching;
-            this.viewRef.context.searchInitialized = this.ctx.searchInitialized;
-            this.viewRef.detectChanges();
+        // Recreate the template
+        this.viewContainer.clear();
+        if (this.ctx.results && this.ctx.isOpen) {
+            this.viewContainer.createEmbeddedView(this.templateRef, this.ctx);
         }
         this.cd.markForCheck();
     };
     CtrList.prototype.getBestMatchIndex = function () {
         var _this = this;
-        if (!this.ctx.results || !this.term) {
+        if (!this.ctx.results) {
             return null;
         }
         // First try to find the exact term
@@ -215,7 +202,6 @@ CtrList.propDecorators = {
     'ctrListPause': [{ type: Input },],
     'ctrListAutoMatch': [{ type: Input },],
     'ctrListAutoHighlight': [{ type: Input },],
-    'ctrListDisplaySearching': [{ type: Input },],
     'dataService': [{ type: Input, args: ["ctrList",] },],
     'initialValue': [{ type: Input, args: ["ctrListInitialValue",] },],
 };

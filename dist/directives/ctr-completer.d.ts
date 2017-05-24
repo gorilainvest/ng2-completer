@@ -11,11 +11,10 @@ export interface CompleterDropdown {
     selectCurrent(): void;
     nextRow(): void;
     prevRow(): void;
-    highlightRow(index: number | null): void;
 }
 export declare class CtrCompleter {
-    selected: EventEmitter<CompleterItem | null>;
-    highlighted: EventEmitter<CompleterItem | null>;
+    selected: EventEmitter<CompleterItem>;
+    highlighted: EventEmitter<CompleterItem>;
     opened: EventEmitter<boolean>;
     private list;
     private dropdown;
@@ -25,8 +24,8 @@ export declare class CtrCompleter {
     private _isOpen;
     private _autoHighlightIndex;
     registerList(list: CompleterList): void;
-    registerDropdown(dropdown: CompleterDropdown | null): void;
-    onHighlighted(item: CompleterItem | null): void;
+    registerDropdown(dropdown: CompleterDropdown): void;
+    onHighlighted(item: CompleterItem): void;
     onSelected(item: CompleterItem, clearList?: boolean): void;
     search(term: string): void;
     clear(): void;
@@ -38,6 +37,6 @@ export declare class CtrCompleter {
     isCancelBlur(): boolean;
     open(): void;
     isOpen: boolean;
-    autoHighlightIndex: number | null;
+    autoHighlightIndex: number;
     readonly hasSelected: boolean;
 }

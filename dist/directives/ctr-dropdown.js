@@ -1,6 +1,5 @@
 import { Directive, ElementRef, Host, HostListener } from "@angular/core";
 import { CtrCompleter } from "./ctr-completer";
-import { isNil } from "../globals";
 var CtrRowItem = (function () {
     function CtrRowItem(row, index) {
         this.row = row;
@@ -16,14 +15,16 @@ var CtrDropdown = (function () {
         this.rows = [];
         this.completer.registerDropdown(this);
     }
+    CtrDropdown.prototype.ngOnInit = function () {
+        var css = getComputedStyle(this.el.nativeElement);
+        this.isScrollOn = css.maxHeight && css.overflowY === "auto";
+    };
     CtrDropdown.prototype.ngOnDestroy = function () {
         this.completer.registerDropdown(null);
     };
     CtrDropdown.prototype.ngAfterViewInit = function () {
         var _this = this;
-        var css = getComputedStyle(this.el.nativeElement);
         var autoHighlightIndex = this.completer.autoHighlightIndex;
-        this.isScrollOn = !!css.maxHeight && css.overflowY === "auto";
         if (autoHighlightIndex) {
             setTimeout(function () {
                 _this.highlightRow(autoHighlightIndex);
@@ -39,24 +40,11 @@ var CtrDropdown = (function () {
         }, 0);
     };
     CtrDropdown.prototype.registerRow = function (row) {
-        var arrIndex = this.rows.findIndex(function (_row) { return _row.index === row.index; });
-        if (arrIndex >= 0) {
-            this.rows[arrIndex] = row;
-        }
-        else {
-            this.rows.push(row);
-        }
-    };
-    CtrDropdown.prototype.unregisterRow = function (rowIndex) {
-        var arrIndex = this.rows.findIndex(function (_row) { return _row.index === rowIndex; });
-        this.rows.splice(arrIndex, 1);
-        if (this.currHighlighted && rowIndex === this.currHighlighted.index) {
-            this.highlightRow(null);
-        }
+        this.rows.push(row);
     };
     CtrDropdown.prototype.highlightRow = function (index) {
         var highlighted = this.rows.find(function (row) { return row.index === index; });
-        if (isNil(index) || index < 0) {
+        if (index < 0) {
             if (this.currHighlighted) {
                 this.currHighlighted.row.setHighlighted(false);
             }
@@ -75,9 +63,6 @@ var CtrDropdown = (function () {
         this.completer.onHighlighted(this.currHighlighted.row.getDataItem());
         if (this.isScrollOn && this.currHighlighted) {
             var rowTop = this.dropdownRowTop();
-            if (!rowTop) {
-                return;
-            }
             if (rowTop < 0) {
                 this.dropdownScrollTopTo(rowTop - 1);
             }
@@ -124,9 +109,6 @@ var CtrDropdown = (function () {
         this.el.nativeElement.scrollTop = this.el.nativeElement.scrollTop + offset;
     };
     CtrDropdown.prototype.dropdownRowTop = function () {
-        if (!this.currHighlighted) {
-            return;
-        }
         return this.currHighlighted.row.getNativeElement().getBoundingClientRect().top -
             (this.el.nativeElement.getBoundingClientRect().top +
                 parseInt(getComputedStyle(this.el.nativeElement).paddingTop, 10));

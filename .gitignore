@@ -43,3 +43,4 @@ Status API Training Shop Blog About Pricing
 src/demo/app-bundle.*
 /nbproject/
 /.env
+/ng2-completer/

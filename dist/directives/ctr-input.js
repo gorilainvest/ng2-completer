@@ -50,16 +50,14 @@ var CtrInput = (function () {
                 }
             }
         });
-        if (this.ngModel.valueChanges) {
-            this.ngModel.valueChanges.subscribe(function (value) {
-                if (!isNil(value) && _this._displayStr !== value) {
-                    if (_this.searchStr !== value) {
-                        _this.completer.search(value);
-                    }
-                    _this.searchStr = value;
+        this.ngModel.valueChanges.subscribe(function (value) {
+            if (!isNil(value) && _this._displayStr !== value) {
+                if (_this.searchStr !== value) {
+                    _this.completer.search(value);
                 }
-            });
-        }
+                _this.searchStr = value;
+            }
+        });
     }
     CtrInput.prototype.keyupHandler = function (event) {
         if (event.keyCode === KEY_LF || event.keyCode === KEY_RT || event.keyCode === KEY_TAB) {
@@ -74,11 +72,12 @@ var CtrInput = (function () {
             this.completer.search(this.searchStr);
         }
         else if (event.keyCode === KEY_ES) {
-            if (this.completer.isOpen) {
-                this.restoreSearchValue();
-                this.completer.clear();
-                event.stopPropagation();
-                event.preventDefault();
+            this.restoreSearchValue();
+            this.completer.clear();
+        }
+        else {
+            if (this.searchStr) {
+                this.completer.open();
             }
         }
     };
@@ -105,14 +104,6 @@ var CtrInput = (function () {
             // This is very specific to IE10/11 #272
             // without this, IE clears the input text
             event.preventDefault();
-            if (this.completer.isOpen) {
-                event.stopPropagation();
-            }
-        }
-        else {
-            if (this.searchStr) {
-                this.completer.open();
-            }
         }
     };
     CtrInput.prototype.onBlur = function (event) {
@@ -125,9 +116,23 @@ var CtrInput = (function () {
             }, 0);
             return;
         }
-        if (this.completer.isOpen) {
-            this.blurTimer = Observable.timer(200).subscribe(function () { return _this.doBlur(); });
-        }
+        this.blurTimer = Observable.timer(200).subscribe(function () {
+            _this.blurTimer.unsubscribe();
+            _this.blurTimer = null;
+            if (_this.overrideSuggested) {
+                _this.completer.onSelected({ title: _this.searchStr, originalObject: null });
+            }
+            else {
+                if (_this.clearUnselected && !_this.completer.hasSelected) {
+                    _this.searchStr = "";
+                    _this.ngModelChange.emit(_this.searchStr);
+                }
+                else {
+                    _this.restoreSearchValue();
+                }
+            }
+            _this.completer.clear();
+        });
     };
     CtrInput.prototype.onfocus = function () {
         if (this.blurTimer) {
@@ -169,25 +174,6 @@ var CtrInput = (function () {
             }
         }
     };
-    CtrInput.prototype.doBlur = function () {
-        if (this.blurTimer) {
-            this.blurTimer.unsubscribe();
-            this.blurTimer = null;
-        }
-        if (this.overrideSuggested) {
-            this.completer.onSelected({ title: this.searchStr, originalObject: null });
-        }
-        else {
-            if (this.clearUnselected && !this.completer.hasSelected) {
-                this.searchStr = "";
-                this.ngModelChange.emit(this.searchStr);
-            }
-            else {
-                this.restoreSearchValue();
-            }
-        }
-        this.completer.clear();
-    };
     return CtrInput;
 }());
 export { CtrInput };
@@ -212,6 +198,6 @@ CtrInput.propDecorators = {
     'keyupHandler': [{ type: HostListener, args: ["keyup", ["$event"],] },],
     'keydownHandler': [{ type: HostListener, args: ["keydown", ["$event"],] },],
     'onBlur': [{ type: HostListener, args: ["blur", ["$event"],] },],
-    'onfocus': [{ type: HostListener, args: ["focus", [],] },],
+    'onfocus': [{ type: HostListener, args: ["focus", ["$event"],] },],
 };
 //# sourceMappingURL=ctr-input.js.map

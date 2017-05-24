@@ -7,15 +7,12 @@ var CtrRow = (function () {
         this.dropdown = dropdown;
         this.selected = false;
     }
-    CtrRow.prototype.ngOnDestroy = function () {
-        if (this._rowIndex) {
-            this.dropdown.unregisterRow(this._rowIndex);
-        }
+    CtrRow.prototype.ngOnInit = function () {
+        this.dropdown.registerRow(new CtrRowItem(this, this._rowIndex));
     };
     Object.defineProperty(CtrRow.prototype, "ctrRow", {
         set: function (index) {
             this._rowIndex = index;
-            this.dropdown.registerRow(new CtrRowItem(this, this._rowIndex));
         },
         enumerable: true,
         configurable: true

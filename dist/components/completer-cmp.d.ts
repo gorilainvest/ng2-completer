@@ -1,4 +1,4 @@
-import { AfterViewChecked, ChangeDetectorRef, EventEmitter, OnInit, AfterViewInit, ElementRef } from "@angular/core";
+import { AfterViewChecked, EventEmitter, OnInit, AfterViewInit, ElementRef } from "@angular/core";
 import { ControlValueAccessor, FormControl } from "@angular/forms";
 import { CtrCompleter } from "../directives/ctr-completer";
 import { CompleterData } from "../services/completer-data";
@@ -7,7 +7,6 @@ import { CompleterItem } from "./completer-item";
 import "rxjs/add/operator/catch";
 export declare class CompleterCmp implements OnInit, ControlValueAccessor, AfterViewChecked, AfterViewInit {
     private completerService;
-    private cdr;
     dataService: CompleterData;
     inputName: string;
     inputId: string;
@@ -47,7 +46,7 @@ export declare class CompleterCmp implements OnInit, ControlValueAccessor, After
     private _open;
     private _textNoResults;
     private _textSearching;
-    constructor(completerService: CompleterService, cdr: ChangeDetectorRef);
+    constructor(completerService: CompleterService);
     value: any;
     ngAfterViewInit(): void;
     ngAfterViewChecked(): void;

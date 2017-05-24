@@ -35,7 +35,7 @@ var CompleterBaseData = (function (_super) {
     CompleterBaseData.prototype.convertToItem = function (data) {
         var image = null;
         var formattedText;
-        var formattedDesc = null;
+        var formattedDesc;
         if (this._titleField) {
             formattedText = this.extractTitle(data);
         }
@@ -57,6 +57,9 @@ var CompleterBaseData = (function (_super) {
             image: image,
             originalObject: data
         };
+    };
+    CompleterBaseData.prototype.responseFormatter = function (formatterFunction) {
+        this.formatterFunction = formatterFunction;
     };
     CompleterBaseData.prototype.extractMatches = function (data, term) {
         var _this = this;
@@ -110,7 +113,20 @@ var CompleterBaseData = (function (_super) {
                 }
             }
         }
-        return results;
+        return this.executeFormatterFunction(results);
+    };
+    CompleterBaseData.prototype.executeFormatterFunction = function (data) {
+        try {
+            var fn = this.formatterFunction;
+            if (typeof fn !== 'undefined' && fn !== null) {
+                var temp = fn(data);
+                return temp;
+            }
+        }
+        catch (e) {
+            console.warn(e);
+        }
+        return data;
     };
     return CompleterBaseData;
 }(Subject));
