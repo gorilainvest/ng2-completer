@@ -1,23 +1,23 @@
 webpackJsonp([0],{
 
-/***/ 156:
+/***/ 118:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_completer_cmp__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_completer_list_item_cmp__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_completer_service__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_completer_data_factory__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_ctr_completer__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ctr_dropdown__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ctr_input__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_ctr_list__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_ctr_row__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common__ = __webpack_require__(15);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2CompleterModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_completer_cmp__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_completer_list_item_cmp__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_completer_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_completer_data_factory__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_ctr_completer__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ctr_dropdown__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ctr_input__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_ctr_list__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_ctr_row__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -79,15 +79,15 @@ Ng2CompleterModule = __decorate([
 
 /***/ }),
 
-/***/ 263:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src__ = __webpack_require__(77);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaterialCmp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src__ = __webpack_require__(71);
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -101,11 +101,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var template = __webpack_require__(595);
+var template = __webpack_require__(462);
 // let style = require("./native-cmp.css");
 var MaterialCmp = (function () {
     function MaterialCmp(completerService) {
-        this.countries = __webpack_require__(295);
+        this.countries = __webpack_require__(194);
         this.dataService = completerService.local(this.countries, "name", "name").imageField("flag");
     }
     return MaterialCmp;
@@ -122,17 +122,17 @@ MaterialCmp = __decorate([
 
 /***/ }),
 
-/***/ 264:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__custom_data__ = __webpack_require__(395);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NativeCmp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__custom_data__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(35);
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -148,12 +148,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var template = __webpack_require__(597);
-var style = __webpack_require__(596);
+var template = __webpack_require__(464);
+var style = __webpack_require__(463);
 var NativeCmp = (function () {
     function NativeCmp(completerService, http) {
-        this.countries = __webpack_require__(295);
-        this.colors = __webpack_require__(586);
+        this.countries = __webpack_require__(194);
+        this.colors = __webpack_require__(453);
         this.quotes = [
             {
                 qt: "Always forgive your enemies; nothing annoys them so much.",
@@ -198,6 +198,7 @@ var NativeCmp = (function () {
         ];
         this.color2 = "lig";
         this.countryName2 = "";
+        this.countryNameResponseFormatter = "";
         this.quote = "";
         this.isOpen = false;
         this.dataService = completerService.local(this.countries, "name", "name").imageField("flag");
@@ -208,6 +209,7 @@ var NativeCmp = (function () {
             return "http://www.omdbapi.com/?s=" + term + "&type=movie";
         });
         this.dataRemote2.dataField("Search");
+        this.setDataResponseFormatter(completerService);
         // For async local the source can also be HTTP request
         // let source = http.get("https://raw.githubusercontent.com/oferh/ng2-completer/master/demo/res/data/countries.json?").map((res: any) => res.json());
         var source = __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__["Observable"].from([this.countries]).delay(3000);
@@ -215,6 +217,24 @@ var NativeCmp = (function () {
         this.customData = new __WEBPACK_IMPORTED_MODULE_3__custom_data__["a" /* CustomData */](http);
         this.dataService4 = completerService.local(this.colors, null, null);
     }
+    NativeCmp.prototype.setDataResponseFormatter = function (completerService) {
+        this.dataRemoteResponseFormatter = completerService.remote("https://raw.githubusercontent.com/oferh/ng2-completer/master/demo/res/data/countries.json?", "name", "name");
+        this.dataRemoteResponseFormatter.descriptionField("description");
+        this.dataRemoteResponseFormatter.responseFormatter(function (data) {
+            for (var i in data) {
+                data[i]['description'] = 'code:' + data[i].originalObject.code;
+            }
+            return data;
+        });
+    };
+    NativeCmp.prototype.onCountrySelectedResponseFormatter = function (selected) {
+        if (selected) {
+            this.countryNameResponseFormatter = selected.title;
+        }
+        else {
+            this.countryNameResponseFormatter = "";
+        }
+    };
     NativeCmp.prototype.onCountrySelected = function (selected) {
         if (selected) {
             this.countryName2 = selected.title;
@@ -265,157 +285,7 @@ NativeCmp = __decorate([
 
 /***/ }),
 
-/***/ 27:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrCompleter; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var CtrCompleter = (function () {
-    function CtrCompleter() {
-        this.selected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.highlighted = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.opened = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this._hasHighlighted = false;
-        this._hasSelected = false;
-        this._cancelBlur = false;
-        this._isOpen = false;
-    }
-    CtrCompleter.prototype.registerList = function (list) {
-        this.list = list;
-    };
-    CtrCompleter.prototype.registerDropdown = function (dropdown) {
-        this.dropdown = dropdown;
-    };
-    CtrCompleter.prototype.onHighlighted = function (item) {
-        this.highlighted.emit(item);
-        this._hasHighlighted = !!item;
-    };
-    CtrCompleter.prototype.onSelected = function (item, clearList) {
-        if (clearList === void 0) { clearList = true; }
-        this.selected.emit(item);
-        if (item) {
-            this._hasSelected = true;
-        }
-        if (clearList) {
-            this.clear();
-        }
-    };
-    CtrCompleter.prototype.search = function (term) {
-        if (this._hasSelected) {
-            this.selected.emit(null);
-            this._hasSelected = false;
-        }
-        if (this.list) {
-            this.list.search(term);
-        }
-    };
-    CtrCompleter.prototype.clear = function () {
-        if (this.dropdown) {
-            this.dropdown.clear();
-        }
-        if (this.list) {
-            this.list.clear();
-        }
-        this._hasHighlighted = false;
-        this.isOpen = false;
-    };
-    CtrCompleter.prototype.selectCurrent = function () {
-        if (this.dropdown) {
-            this.dropdown.selectCurrent();
-        }
-    };
-    CtrCompleter.prototype.nextRow = function () {
-        if (this.dropdown) {
-            this.dropdown.nextRow();
-        }
-    };
-    CtrCompleter.prototype.prevRow = function () {
-        if (this.dropdown) {
-            this.dropdown.prevRow();
-        }
-    };
-    CtrCompleter.prototype.hasHighlighted = function () {
-        return this._hasHighlighted;
-    };
-    CtrCompleter.prototype.cancelBlur = function (cancel) {
-        this._cancelBlur = cancel;
-    };
-    CtrCompleter.prototype.isCancelBlur = function () {
-        return this._cancelBlur;
-    };
-    CtrCompleter.prototype.open = function () {
-        if (!this._isOpen) {
-            this.isOpen = true;
-            this.list.open();
-        }
-    };
-    Object.defineProperty(CtrCompleter.prototype, "isOpen", {
-        get: function () {
-            return this._isOpen;
-        },
-        set: function (open) {
-            this._isOpen = open;
-            this.opened.emit(this._isOpen);
-            if (this.list) {
-                this.list.isOpen(open);
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CtrCompleter.prototype, "autoHighlightIndex", {
-        get: function () {
-            return this._autoHighlightIndex;
-        },
-        set: function (index) {
-            this._autoHighlightIndex = index;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CtrCompleter.prototype, "hasSelected", {
-        get: function () {
-            return this._hasSelected;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    return CtrCompleter;
-}());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
-    __metadata("design:type", Object)
-], CtrCompleter.prototype, "selected", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
-    __metadata("design:type", Object)
-], CtrCompleter.prototype, "highlighted", void 0);
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
-    __metadata("design:type", Object)
-], CtrCompleter.prototype, "opened", void 0);
-CtrCompleter = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
-        selector: "[ctrCompleter]",
-    })
-], CtrCompleter);
-
-
-
-/***/ }),
-
-/***/ 295:
+/***/ 194:
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -1638,12 +1508,12 @@ module.exports = [
 
 /***/ }),
 
-/***/ 296:
+/***/ 195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollapseDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 
 var CollapseDirective = (function () {
     function CollapseDirective(_el, _renderer) {
@@ -1747,23 +1617,173 @@ var CollapseDirective = (function () {
 
 /***/ }),
 
-/***/ 347:
+/***/ 24:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap_collapse__ = __webpack_require__(588);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_cmp__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__material_cmp__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__native_cmp__ = __webpack_require__(264);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routing__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__completer_cmp_md__ = __webpack_require__(394);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrCompleter; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CtrCompleter = (function () {
+    function CtrCompleter() {
+        this.selected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.highlighted = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.opened = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this._hasHighlighted = false;
+        this._hasSelected = false;
+        this._cancelBlur = false;
+        this._isOpen = false;
+    }
+    CtrCompleter.prototype.registerList = function (list) {
+        this.list = list;
+    };
+    CtrCompleter.prototype.registerDropdown = function (dropdown) {
+        this.dropdown = dropdown;
+    };
+    CtrCompleter.prototype.onHighlighted = function (item) {
+        this.highlighted.emit(item);
+        this._hasHighlighted = !!item;
+    };
+    CtrCompleter.prototype.onSelected = function (item, clearList) {
+        if (clearList === void 0) { clearList = true; }
+        this.selected.emit(item);
+        if (item) {
+            this._hasSelected = true;
+        }
+        if (clearList) {
+            this.clear();
+        }
+    };
+    CtrCompleter.prototype.search = function (term) {
+        if (this._hasSelected) {
+            this.selected.emit(null);
+            this._hasSelected = false;
+        }
+        if (this.list) {
+            this.list.search(term);
+        }
+    };
+    CtrCompleter.prototype.clear = function () {
+        if (this.dropdown) {
+            this.dropdown.clear();
+        }
+        if (this.list) {
+            this.list.clear();
+        }
+        this._hasHighlighted = false;
+        this.isOpen = false;
+    };
+    CtrCompleter.prototype.selectCurrent = function () {
+        if (this.dropdown) {
+            this.dropdown.selectCurrent();
+        }
+    };
+    CtrCompleter.prototype.nextRow = function () {
+        if (this.dropdown) {
+            this.dropdown.nextRow();
+        }
+    };
+    CtrCompleter.prototype.prevRow = function () {
+        if (this.dropdown) {
+            this.dropdown.prevRow();
+        }
+    };
+    CtrCompleter.prototype.hasHighlighted = function () {
+        return this._hasHighlighted;
+    };
+    CtrCompleter.prototype.cancelBlur = function (cancel) {
+        this._cancelBlur = cancel;
+    };
+    CtrCompleter.prototype.isCancelBlur = function () {
+        return this._cancelBlur;
+    };
+    CtrCompleter.prototype.open = function () {
+        if (!this._isOpen) {
+            this.isOpen = true;
+            this.list.open();
+        }
+    };
+    Object.defineProperty(CtrCompleter.prototype, "isOpen", {
+        get: function () {
+            return this._isOpen;
+        },
+        set: function (open) {
+            this._isOpen = open;
+            this.opened.emit(this._isOpen);
+            if (this.list) {
+                this.list.isOpen(open);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CtrCompleter.prototype, "autoHighlightIndex", {
+        get: function () {
+            return this._autoHighlightIndex;
+        },
+        set: function (index) {
+            this._autoHighlightIndex = index;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CtrCompleter.prototype, "hasSelected", {
+        get: function () {
+            return this._hasSelected;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return CtrCompleter;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+    __metadata("design:type", Object)
+], CtrCompleter.prototype, "selected", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+    __metadata("design:type", Object)
+], CtrCompleter.prototype, "highlighted", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+    __metadata("design:type", Object)
+], CtrCompleter.prototype, "opened", void 0);
+CtrCompleter = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+        selector: "[ctrCompleter]",
+    })
+], CtrCompleter);
+
+
+
+/***/ }),
+
+/***/ 252:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap_collapse__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_cmp__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__material_cmp__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__native_cmp__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routing__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__completer_cmp_md__ = __webpack_require__(261);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1807,14 +1827,14 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 391:
+/***/ 258:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Rx__);
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1824,7 +1844,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 
 
-var template = __webpack_require__(592);
+var template = __webpack_require__(459);
 var AppComponent = (function () {
     function AppComponent() {
         this.isCollapsed = false;
@@ -1842,14 +1862,14 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 392:
+/***/ 259:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__material_cmp__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native_cmp__ = __webpack_require__(264);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__material_cmp__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native_cmp__ = __webpack_require__(163);
 
 
 
@@ -1873,14 +1893,14 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["RouterModule"].forR
 
 /***/ }),
 
-/***/ 393:
+/***/ 260:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module__ = __webpack_require__(252);
 
 
 
@@ -1894,17 +1914,17 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 394:
+/***/ 261:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_globals__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterCmpMd; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_globals__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2072,8 +2092,8 @@ __decorate([
 CompleterCmpMd = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: "ng2-completer-md",
-        template: __webpack_require__(594),
-        styles: [__webpack_require__(593)],
+        template: __webpack_require__(461),
+        styles: [__webpack_require__(460)],
         providers: [COMPLETER_CONTROL_VALUE_ACCESSOR]
     }),
     __metadata("design:paramtypes", [])
@@ -2083,13 +2103,13 @@ CompleterCmpMd = __decorate([
 
 /***/ }),
 
-/***/ 395:
+/***/ 262:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomData; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2133,7 +2153,7 @@ var CustomData = (function (_super) {
 
 /***/ }),
 
-/***/ 40:
+/***/ 36:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2159,7 +2179,7 @@ function isNil(value) {
 
 /***/ }),
 
-/***/ 586:
+/***/ 453:
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -2315,13 +2335,13 @@ module.exports = [
 
 /***/ }),
 
-/***/ 587:
+/***/ 454:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collapse_directive__ = __webpack_require__(296);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollapseModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collapse_directive__ = __webpack_require__(195);
 
 
 var CollapseModule = (function () {
@@ -2344,13 +2364,13 @@ var CollapseModule = (function () {
 
 /***/ }),
 
-/***/ 588:
+/***/ 455:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse_directive__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse_directive__ = __webpack_require__(195);
 /* unused harmony reexport CollapseDirective */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collapse_module__ = __webpack_require__(587);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__collapse_module__ = __webpack_require__(454);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__collapse_module__["a"]; });
 
 
@@ -2358,56 +2378,56 @@ var CollapseModule = (function () {
 
 /***/ }),
 
-/***/ 592:
+/***/ 459:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse bg-inverse sticky-top\">\n\t\t<a href=\"https://github.com/oferh/ng2-completer\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67\" alt=\"Fork me on GitHub\" data-canonical-src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png\"></a>\t<div class=\"container\">\n\t\t<button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\"\n\t\t\t\t\t\tdata-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\"\n\t\t\t\t\t\taria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"isCollapsed = !isCollapsed\">\n\t\t\t<span class=\"navbar-toggler-icon\"></span>\n\t\t</button>\n\t\t<a class=\"navbar-brand\" href=\"#\"><strong>ng2-completer</strong> demo</a>\n\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" [collapse]=\"!isCollapsed\">\n\t\t\t<ul class=\"navbar-nav mr-auto\">\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link\" routerLink=\"/native\" routerLinkActive=\"active\">JS Native</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link\" routerLink=\"/material\" routerLinkActive=\"active\">Material Design</a>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</nav>\n<div class=\"container main\">\n\t<router-outlet></router-outlet>\n</div>\n"
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse bg-inverse sticky-top\">\r\n\t\t<a href=\"https://github.com/oferh/ng2-completer\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67\" alt=\"Fork me on GitHub\" data-canonical-src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png\"></a>\t<div class=\"container\">\r\n\t\t<button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\"\r\n\t\t\t\t\t\tdata-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\"\r\n\t\t\t\t\t\taria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"isCollapsed = !isCollapsed\">\r\n\t\t\t<span class=\"navbar-toggler-icon\"></span>\r\n\t\t</button>\r\n\t\t<a class=\"navbar-brand\" href=\"#\"><strong>ng2-completer</strong> demo</a>\r\n\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" [collapse]=\"!isCollapsed\">\r\n\t\t\t<ul class=\"navbar-nav mr-auto\">\r\n\t\t\t\t<li class=\"nav-item\">\r\n\t\t\t\t\t<a class=\"nav-link\" routerLink=\"/native\" routerLinkActive=\"active\">JS Native</a>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li class=\"nav-item\">\r\n\t\t\t\t\t<a class=\"nav-link\" routerLink=\"/material\" routerLinkActive=\"active\">Material Design</a>\r\n\t\t\t\t</li>\r\n\t\t\t</ul>\r\n\t\t</div>\r\n\t</div>\r\n</nav>\r\n<div class=\"container main\">\r\n\t<router-outlet></router-outlet>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 593:
+/***/ 460:
 /***/ (function(module, exports) {
 
-module.exports = ".completer-row {\n    display: inherit;\n}\n\n.completer-selected-row {\n    background-color: lightblue;\n    color: #ffffff;\n}\n\n.completer-row p {\n    position: relative;\n    top: 50%;\n    transform: translateY(50%);\n}\n\n.completer-dropdown-holder {\n    position: absolute;\n    background: white;\n}"
+module.exports = ".completer-row {\r\n    display: inherit;\r\n}\r\n\r\n.completer-selected-row {\r\n    background-color: lightblue;\r\n    color: #ffffff;\r\n}\r\n\r\n.completer-row p {\r\n    position: relative;\r\n    top: 50%;\r\n    transform: translateY(50%);\r\n}\r\n\r\n.completer-dropdown-holder {\r\n    position: absolute;\r\n    background: white;\r\n}"
 
 /***/ }),
 
-/***/ 594:
+/***/ 461:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"completer-holder\" ctrCompleter>\n    <md-input-container class=\"completer-input\">\n        <input mdInput ctrInput=\"clearSelected=clearSelected; overrideSuggested=overrideSuggested; fillHighlighted=fillHighlighted\" [(ngModel)]=\"searchStr\" \n            [attr.name]=\"inputName\" [attr.maxlength]=\"maxChars\" [tabindex]=\"fieldTabindex\" [disabled]=\"disableInput\" (blur)=\"onBlur()\" [placeholder]=\"placeholder\"\n            autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\">\n    </md-input-container>\n\n    <div class=\"completer-dropdown-holder\" *ctrList=\"dataService; minSearchLength: minSearchLength; pause: pause; autoMatch: autoMatch; let items = results; let searchActive = searching; let isInitialized = searchInitialized;\">\n        <md-list class=\"completer-dropdown\" ctrDropdown *ngIf=\"isInitialized\">\n            <md-list-item *ngIf=\"searchActive && displaySearching\" class=\"completer-searching\">{{textSearching}}</md-list-item>\n            <md-list-item *ngIf=\"!searchActive && (!items || items.length === 0)\" class=\"completer-no-results\">{{textNoResults}}</md-list-item>\n            <md-list-item class=\"completer-row-wrapper\" *ngFor=\"let item of items; let rowIndex=index\">\n                <div class=\"completer-row\" [ctrRow]=\"rowIndex\" [dataItem]=\"item\">\n                    <span *ngIf=\"item.image || item.image === ''\" class=\"completer-image-holder\">\n                        <img md-list-avatar *ngIf=\"item.image != ''\" src=\"{{item.image}}\" class=\"completer-image\" />\n                        <span md-list-avatar *ngIf=\"item.image === ''\" class=\"completer-image-default\"></span>\n                    </span>\n                    <p md-line>\n                        <completer-list-item class=\"completer-title\" [text]=\"item.title\" [matchClass]=\"matchClass\" [searchStr]=\"searchStr\" [type]=\"'title'\"></completer-list-item>\n                        <completer-list-item *ngIf=\"item.description && item.description != ''\" class=\"completer-description\" [text]=\"item.description\"\n                            [matchClass]=\"matchClass\" [searchStr]=\"searchStr\" [type]=\"'description'\">\n                        </completer-list-item>\n                    </p>\n                </div>\n            </md-list-item>\n        </md-list>\n    </div>\n</div>"
+module.exports = "<div class=\"completer-holder\" ctrCompleter>\r\n    <md-input-container class=\"completer-input\">\r\n        <input mdInput ctrInput=\"clearSelected=clearSelected; overrideSuggested=overrideSuggested; fillHighlighted=fillHighlighted\" [(ngModel)]=\"searchStr\" \r\n            [attr.name]=\"inputName\" [attr.maxlength]=\"maxChars\" [tabindex]=\"fieldTabindex\" [disabled]=\"disableInput\" (blur)=\"onBlur()\" [placeholder]=\"placeholder\"\r\n            autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\">\r\n    </md-input-container>\r\n\r\n    <div class=\"completer-dropdown-holder\" *ctrList=\"dataService; minSearchLength: minSearchLength; pause: pause; autoMatch: autoMatch; let items = results; let searchActive = searching; let isInitialized = searchInitialized;\">\r\n        <md-list class=\"completer-dropdown\" ctrDropdown *ngIf=\"isInitialized\">\r\n            <md-list-item *ngIf=\"searchActive && displaySearching\" class=\"completer-searching\">{{textSearching}}</md-list-item>\r\n            <md-list-item *ngIf=\"!searchActive && (!items || items.length === 0)\" class=\"completer-no-results\">{{textNoResults}}</md-list-item>\r\n            <md-list-item class=\"completer-row-wrapper\" *ngFor=\"let item of items; let rowIndex=index\">\r\n                <div class=\"completer-row\" [ctrRow]=\"rowIndex\" [dataItem]=\"item\">\r\n                    <span *ngIf=\"item.image || item.image === ''\" class=\"completer-image-holder\">\r\n                        <img md-list-avatar *ngIf=\"item.image != ''\" src=\"{{item.image}}\" class=\"completer-image\" />\r\n                        <span md-list-avatar *ngIf=\"item.image === ''\" class=\"completer-image-default\"></span>\r\n                    </span>\r\n                    <p md-line>\r\n                        <completer-list-item class=\"completer-title\" [text]=\"item.title\" [matchClass]=\"matchClass\" [searchStr]=\"searchStr\" [type]=\"'title'\"></completer-list-item>\r\n                        <completer-list-item *ngIf=\"item.description && item.description != ''\" class=\"completer-description\" [text]=\"item.description\"\r\n                            [matchClass]=\"matchClass\" [searchStr]=\"searchStr\" [type]=\"'description'\">\r\n                        </completer-list-item>\r\n                    </p>\r\n                </div>\r\n            </md-list-item>\r\n        </md-list>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 595:
+/***/ 462:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n     <div class=\"col-md-offset-1\">\n        <h1>Completer Material</h1>\n        <p>This is a demo of a custom component that uses Ng2-Completer directives to create a material2 autocomplete component.</p>\n        <p>To use this compnent copy all completer-cmp-md files from the demo code</p>\n     </div>\n</div>\n<h3>Local data with image</h3>\n<div class=\"completer-wrapper\">\n    <div class=\"col-md-offset-1\">\n        <div>\n            <p>Local data of countries - using image, matchClass and maxLength</p>\n        </div>\n        <div class=\"ng-scope layout-row\">\n            <ng2-completer-md [(ngModel)]=\"countryName\" [dataService]=\"dataService\" [minSearchLength]=\"0\" [maxChars]=\"4\" [placeholder]=\"'search country'\"\n                [matchClass]=\"'match'\">\n            </ng2-completer-md>\n        </div>\n        <div>\n            <p>Selected country: {{countryName}}</p>\n        </div>\n    </div>\n</div>\n"
+module.exports = "<div class=\"row\">\r\n     <div class=\"col-md-offset-1\">\r\n        <h1>Completer Material</h1>\r\n        <p>This is a demo of a custom component that uses Ng2-Completer directives to create a material2 autocomplete component.</p>\r\n        <p>To use this compnent copy all completer-cmp-md files from the demo code</p>\r\n     </div>\r\n</div>\r\n<h3>Local data with image</h3>\r\n<div class=\"completer-wrapper\">\r\n    <div class=\"col-md-offset-1\">\r\n        <div>\r\n            <p>Local data of countries - using image, matchClass and maxLength</p>\r\n        </div>\r\n        <div class=\"ng-scope layout-row\">\r\n            <ng2-completer-md [(ngModel)]=\"countryName\" [dataService]=\"dataService\" [minSearchLength]=\"0\" [maxChars]=\"4\" [placeholder]=\"'search country'\"\r\n                [matchClass]=\"'match'\">\r\n            </ng2-completer-md>\r\n        </div>\r\n        <div>\r\n            <p>Selected country: {{countryName}}</p>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 596:
+/***/ 463:
 /***/ (function(module, exports) {
 
-module.exports = "h1 {\n  margin: 1em 0 .5em;\n\n}\n\nh3 {\n  color: #444;\n  border-bottom: 1px solid #efefef;\n  margin: 3em 0 1em;\n}\n\n.form-group:last-child {\n  margin-bottom: 0;\n}\n\n.card-block {\n  background-color: #f7f5f2;\n}\n\n:host {\n  padding: 5em 0;\n}\n\n:host >>> .match {\n  color: darkred;\n}\n\n.completer-limit /deep/ .completer-dropdown {\n  overflow-y: auto;\n  max-height: 20rem;\n}\n\n.chevron {\n  padding-top: 40%;\n}\n\n.chevron-holder {\n  position: absolute;\n  height: 100%;\n  border: 1px solid rgba(0,0,0,.15);\n  border-top-color: rgba(0, 0, 0, 0.14902);\n  background-color: white;\n  border-radius: 25%;\n  border-bottom-left-radius: 0;\n  border-top-left-radius: 0;\n  border-left: 0;\n}\n\n.chevron-holder.dropdown-open {\n  border-color: #5cb3fd;\n}\n\n.with-chevron /deep/ .completer-input {\n  border-right: 0;\n  border-bottom-right-radius: 0;\n  border-top-right-radius: 0;\n}\n"
+module.exports = "h1 {\r\n  margin: 1em 0 .5em;\r\n\r\n}\r\n\r\nh3 {\r\n  color: #444;\r\n  border-bottom: 1px solid #efefef;\r\n  margin: 3em 0 1em;\r\n}\r\n\r\n.form-group:last-child {\r\n  margin-bottom: 0;\r\n}\r\n\r\n.card-block {\r\n  background-color: #f7f5f2;\r\n}\r\n\r\n:host {\r\n  padding: 5em 0;\r\n}\r\n\r\n:host >>> .match {\r\n  color: darkred;\r\n}\r\n\r\n.completer-limit /deep/ .completer-dropdown {\r\n  overflow-y: auto;\r\n  max-height: 20rem;\r\n}\r\n\r\n.chevron {\r\n  padding-top: 40%;\r\n}\r\n\r\n.chevron-holder {\r\n  position: absolute;\r\n  height: 100%;\r\n  border: 1px solid rgba(0,0,0,.15);\r\n  border-top-color: rgba(0, 0, 0, 0.14902);\r\n  background-color: white;\r\n  border-radius: 25%;\r\n  border-bottom-left-radius: 0;\r\n  border-top-left-radius: 0;\r\n  border-left: 0;\r\n}\r\n\r\n.chevron-holder.dropdown-open {\r\n  border-color: #5cb3fd;\r\n}\r\n\r\n.with-chevron /deep/ .completer-input {\r\n  border-right: 0;\r\n  border-bottom-right-radius: 0;\r\n  border-top-right-radius: 0;\r\n}\r\n"
 
 /***/ }),
 
-/***/ 597:
+/***/ 464:
 /***/ (function(module, exports) {
 
-module.exports = "<h1 style=\"margin-top: 1em;\" class=\"page\">Completer Native</h1>\n\n<h3>Local data with image</h3>\n<p>Local data with countries - using <code>image</code>,\n\t<code>matchClass</code>,\n\t<code>maxLength</code>, <code>autofocus</code> and limit of the dropdown length in CSS</p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer class=\"completer-limit\"\n\t\t\t\t\t\t\t\t\t\t\t [(ngModel)]=\"countryName\"\n\t\t\t\t\t\t\t\t\t\t\t [datasource]=\"dataService\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"0\"\n\t\t\t\t\t\t\t\t\t\t\t [maxChars]=\"4\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'Search country'\"\n\t\t\t\t\t\t\t\t\t\t\t [matchClass]=\"'match'\"\n\t\t\t\t\t\t\t\t\t\t\t [autofocus]=\"true\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b>{{countryName || ''}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n\n<h3>Local data with description</h3>\n<p>Local data of quotes - using <code>desription</code>, <code>textNoResults</code>, <code>matchClass</code>\n\tand\n\t<code>selected</code> event</p>\n\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [datasource]=\"dataService2\"\n\t\t\t\t\t\t\t\t\t\t\t (selected)=\"onQuoteSelected($event)\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"0\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'Search quote by author name'\"\n\t\t\t\t\t\t\t\t\t\t\t [textNoResults]=\"'No quotes found'\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [matchClass]=\"'match'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b>{{quote}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Remote data</h3>\n<p>Remote data of countries with <code>minSearchLength</code>, <code>textSearching</code>\n\tand <code>clearSelected</code>\n</p>\n\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [dataService]=\"dataRemote\" [minSearchLength]=\"3\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'Search for country'\"\n\t\t\t\t\t\t\t\t\t\t\t [clearSelected]=\"true\" \n\t\t\t\t\t\t\t\t\t\t\t (selected)=\"onCountrySelected($event)\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [textSearching]=\"'Please wait...'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{countryName2}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Input disabled</h3>\n<p>Async local data of countries - <code>overrideSuggested</code>, <code>inputDisabled</code>,\n\t<code>inputClass</code>, <code>textNoResults = null</code> and <code>fieldTabindex</code>\n</p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [(ngModel)]=\"countryName3\" [datasource]=\"dataService3\" [minSearchLength]=\"0\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'search country'\" [overrideSuggested]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t [disableInput]=\"searchcb\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [fieldTabindex]=\"-1\" \n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'my-input-class'\"\n\t\t\t\t\t\t\t\t\t\t\t [textNoResults]=\"null\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{countryName3}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col\">\n\t\t\t\t<div class=\"form-check\">\n\t\t\t\t\t<label class=\"form-check-label\">\n\t\t\t\t\t\t<input class=\"form-check-input\" type=\"checkbox\" value=\"\" [(ngModel)]=\"searchcb\">\n\t\t\t\t\t\tDisable input\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Automatch</h3>\n<p>Local data of colors - <code>autoMatch</code>, <code>inputId</code> and <code>required</code> and <code>clearUnselected</code></p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\" [class.has-danger]=\"!colorRequired.valid\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer name=\"colorRequired\" [inputId]=\"'completer1'\" [datasource]=\"colors\" [(ngModel)]=\"color\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"0\" [placeholder]=\"'search color'\" #colorRequired=\"ngModel\"\n\t\t\t\t\t\t\t\t\t\t\t [autoMatch]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"(colorRequired.valid) ? 'form-control' : 'form-control form-control-danger'\"\n\t\t\t\t\t\t\t\t\t\t\t [clearUnselected]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t required>\n\t\t\t\t</ng2-completer>\n\t\t\t\t<div *ngIf=\"!colorRequired.valid\" class=\"form-control-feedback\">Sorry, color is required\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{color}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Remote data with URL Formater and Headers</h3>\n<p>Remote data from <a href=\"http://www.omdbapi.com\">The Open Movie Database</a> with\n\t<code>urlFormater</code> and <code>dataField</code></p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [(ngModel)]=\"countryName5\"\n\t\t\t\t\t\t\t\t\t\t\t [datasource]=\"dataRemote2\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"3\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'Search movie title'\"\n\t\t\t\t\t\t\t\t\t\t\t [textSearching]=\"'Please wait...'\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b>{{countryName5}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Custom data provider</h3>\n<p>Custom data provider. Seinfeld episodes data from <a href=\"https://mysafeinfo.com/\">mysafeinfo.com</a>\n</p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [(ngModel)]=\"seinfeldEpisode\" [datasource]=\"customData\" [minSearchLength]=\"3\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'search Seinfeld episode'\" [textSearching]=\"'Please wait...'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{seinfeldEpisode}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Open, close and focus programmatically</h3>\n<p>Local data of colors; Open, Close and Focus programmatically and set ngModel to an initial value with <code>openOnFocus</code>,  <code>autoHighlight</code>, \n\t<code>fillHighlighted</code> and <code>opened</code>\n</p>\n\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-3 pr-0 border-right-0 with-chevron\">\n\t\t\t\t<ng2-completer #openCloseExample class=\"completer-limit\"\n\t\t\t\t\t\t\t\t\t\t\t [(ngModel)]=\"color2\" \n\t\t\t\t\t\t\t\t\t\t\t [datasource]=\"dataService4\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [openOnFocus]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t (opened)=\"onOpened($event)\"\n\t\t\t\t\t\t\t\t\t\t\t (focus)=\"openCloseFocused = true\"\n\t\t\t\t\t\t\t\t\t\t\t (blur)=\"openCloseFocused = flase\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"0\" \n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'search color'\"\n\t\t\t\t\t\t\t\t\t\t\t [autoHighlight]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t [fillHighlighted]=\"false\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-1 p-0\">\n\t\t\t\t<div class=\"w-25 chevron-holder\" [ngClass]=\"{'dropdown-open': openCloseFocused}\">\n\t\t\t\t\t<span class=\"chevron fa\" [ngClass]=\"{'fa-chevron-down': !isOpen, 'fa-chevron-up': isOpen}\" (click)=\"onToggle()\"></span>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-1\">\n\t\t\t\t<button (click)=\"onFocus()\" class=\"btn btn-primary\">Focus</button>\n\t\t\t</div>\n\t\t\t<div class=\"col\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{color2}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n\n<h3>Do not set input value when item is highlighted</h3>\n<p>Remote data of colors with <code>minSearchLength</code>, <code>textSearching</code> and <code>fillHighlighted\n\t= false</code></p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer\n\t\t\t\t\t\t[datasource]=\"'https://raw.githubusercontent.com/oferh/ng2-completer/master/demo/res/data/colors.json?'\"\n\t\t\t\t\t\t[minSearchLength]=\"1\" [placeholder]=\"'search color'\"\n\t\t\t\t\t\t[inputClass]=\"'form-control'\"\n\t\t\t\t\t\t[fillHighlighted]=\"false\"\n\t\t\t\t\t\t[(ngModel)]=\"color4\"\n\t\t\t\t\t\t[textSearching]=\"'Please wait...'\">\n\t\t\t\t</ng2-completer>\n\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{color4}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n\n<h3>Events</h3>\n<p>Event triggering with <code>onBlur</code> and <code>onFocus</code> events.</p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer\n\t\t\t\t\t\t[datasource]=\"'https://raw.githubusercontent.com/oferh/ng2-completer/master/demo/res/data/colors.json?'\"\n\t\t\t\t\t\t[minSearchLength]=\"1\" [placeholder]=\"'search color'\"\n\t\t\t\t\t\t[inputClass]=\"'form-control'\"\n\t\t\t\t\t\t(focus)=\"focused = true; blurred = false;\"\n\t\t\t\t\t\t(blur)=\"focused = false; blurred = true;\"\n\t\t\t\t\t\t[fillHighlighted]=\"false\"\n\t\t\t\t\t\t[textSearching]=\"'Please wait...'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col\">\n\t\t\t\t<div class=\"alert alert-success\" role=\"alert\" *ngIf=\"focused\">\n\t\t\t\t\t<code>(focus)='...'</code> <b>onFocus</b> event emitted.\n\t\t\t\t</div>\n\t\t\t\t<div class=\"alert alert-success\" role=\"alert\" *ngIf=\"blurred\">\n\t\t\t\t\t<code>(blur)='...'</code> <b>onBlur</b> event emitted.\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Local data with initial value</h3>\n<p>Local data of colors with initial value - using <code>initialValue</code></p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-3\">\n\t\t\t\t<ng2-completer [datasource]=\"colors\" [(ngModel)]=\"color3\" [minSearchLength]=\"0\" [placeholder]=\"'search color'\" [initialValue]=\"'red'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-2\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{color3}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<p style=\"margin-bottom: 10em;\"></p>"
+module.exports = "<h1 style=\"margin-top: 1em;\" class=\"page\">Completer Native</h1>\n\n<h3>Local data with image</h3>\n<p>Local data with countries - using <code>image</code>,\n\t<code>matchClass</code>,\n\t<code>maxLength</code>, <code>autofocus</code> and limit of the dropdown length in CSS</p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer class=\"completer-limit\"\n\t\t\t\t\t\t\t\t\t\t\t [(ngModel)]=\"countryName\"\n\t\t\t\t\t\t\t\t\t\t\t [datasource]=\"dataService\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"0\"\n\t\t\t\t\t\t\t\t\t\t\t [maxChars]=\"4\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'Search country'\"\n\t\t\t\t\t\t\t\t\t\t\t [matchClass]=\"'match'\"\n\t\t\t\t\t\t\t\t\t\t\t [autofocus]=\"true\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b>{{countryName || ''}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n\n<h3>Local data with description</h3>\n<p>Local data of quotes - using <code>desription</code>, <code>textNoResults</code>, <code>matchClass</code>\n\tand\n\t<code>selected</code> event</p>\n\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [datasource]=\"dataService2\"\n\t\t\t\t\t\t\t\t\t\t\t (selected)=\"onQuoteSelected($event)\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"0\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'Search quote by author name'\"\n\t\t\t\t\t\t\t\t\t\t\t [textNoResults]=\"'No quotes found'\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [matchClass]=\"'match'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b>{{quote}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Remote data</h3>\n<p>Remote data of countries with <code>minSearchLength</code>, <code>textSearching</code>\n\tand <code>clearSelected</code>\n</p>\n\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [dataService]=\"dataRemote\" [minSearchLength]=\"3\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'Search for country'\"\n\t\t\t\t\t\t\t\t\t\t\t [clearSelected]=\"true\" \n\t\t\t\t\t\t\t\t\t\t\t (selected)=\"onCountrySelected($event)\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [textSearching]=\"'Please wait...'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{countryName2}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Input disabled</h3>\n<p>Async local data of countries - <code>overrideSuggested</code>, <code>inputDisabled</code>,\n\t<code>inputClass</code>, <code>textNoResults = null</code> and <code>fieldTabindex</code>\n</p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [(ngModel)]=\"countryName3\" [datasource]=\"dataService3\" [minSearchLength]=\"0\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'search country'\" [overrideSuggested]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t [disableInput]=\"searchcb\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [fieldTabindex]=\"-1\" \n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'my-input-class'\"\n\t\t\t\t\t\t\t\t\t\t\t [textNoResults]=\"null\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{countryName3}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col\">\n\t\t\t\t<div class=\"form-check\">\n\t\t\t\t\t<label class=\"form-check-label\">\n\t\t\t\t\t\t<input class=\"form-check-input\" type=\"checkbox\" value=\"\" [(ngModel)]=\"searchcb\">\n\t\t\t\t\t\tDisable input\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Automatch</h3>\n<p>Local data of colors - <code>autoMatch</code>, <code>inputId</code> and <code>required</code> and <code>clearUnselected</code></p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\" [class.has-danger]=\"!colorRequired.valid\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer name=\"colorRequired\" [inputId]=\"'completer1'\" [datasource]=\"colors\" [(ngModel)]=\"color\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"0\" [placeholder]=\"'search color'\" #colorRequired=\"ngModel\"\n\t\t\t\t\t\t\t\t\t\t\t [autoMatch]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"(colorRequired.valid) ? 'form-control' : 'form-control form-control-danger'\"\n\t\t\t\t\t\t\t\t\t\t\t [clearUnselected]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t required>\n\t\t\t\t</ng2-completer>\n\t\t\t\t<div *ngIf=\"!colorRequired.valid\" class=\"form-control-feedback\">Sorry, color is required\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{color}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Remote data with URL Formater and Headers</h3>\n<p>Remote data from <a href=\"http://www.omdbapi.com\">The Open Movie Database</a> with\n\t<code>urlFormater</code> and <code>dataField</code></p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [(ngModel)]=\"countryName5\"\n\t\t\t\t\t\t\t\t\t\t\t [datasource]=\"dataRemote2\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"3\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'Search movie title'\"\n\t\t\t\t\t\t\t\t\t\t\t [textSearching]=\"'Please wait...'\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b>{{countryName5}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Custom data provider</h3>\n<p>Custom data provider. Seinfeld episodes data from <a href=\"https://mysafeinfo.com/\">mysafeinfo.com</a>\n</p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer [(ngModel)]=\"seinfeldEpisode\" [datasource]=\"customData\" [minSearchLength]=\"3\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'search Seinfeld episode'\" [textSearching]=\"'Please wait...'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{seinfeldEpisode}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Open, close and focus programmatically</h3>\n<p>Local data of colors; Open, Close and Focus programmatically and set ngModel to an initial value with <code>openOnFocus</code>,  <code>autoHighlight</code>, \n\t<code>fillHighlighted</code> and <code>opened</code>\n</p>\n\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-3 pr-0 border-right-0 with-chevron\">\n\t\t\t\t<ng2-completer #openCloseExample class=\"completer-limit\"\n\t\t\t\t\t\t\t\t\t\t\t [(ngModel)]=\"color2\" \n\t\t\t\t\t\t\t\t\t\t\t [datasource]=\"dataService4\"\n\t\t\t\t\t\t\t\t\t\t\t [inputClass]=\"'form-control'\"\n\t\t\t\t\t\t\t\t\t\t\t [openOnFocus]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t (opened)=\"onOpened($event)\"\n\t\t\t\t\t\t\t\t\t\t\t (focus)=\"openCloseFocused = true\"\n\t\t\t\t\t\t\t\t\t\t\t (blur)=\"openCloseFocused = flase\"\n\t\t\t\t\t\t\t\t\t\t\t [minSearchLength]=\"0\" \n\t\t\t\t\t\t\t\t\t\t\t [placeholder]=\"'search color'\"\n\t\t\t\t\t\t\t\t\t\t\t [autoHighlight]=\"true\"\n\t\t\t\t\t\t\t\t\t\t\t [fillHighlighted]=\"false\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-1 p-0\">\n\t\t\t\t<div class=\"w-25 chevron-holder\" [ngClass]=\"{'dropdown-open': openCloseFocused}\">\n\t\t\t\t\t<span class=\"chevron fa\" [ngClass]=\"{'fa-chevron-down': !isOpen, 'fa-chevron-up': isOpen}\" (click)=\"onToggle()\"></span>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-1\">\n\t\t\t\t<button (click)=\"onFocus()\" class=\"btn btn-primary\">Focus</button>\n\t\t\t</div>\n\t\t\t<div class=\"col\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{color2}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n\n<h3>Do not set input value when item is highlighted</h3>\n<p>Remote data of colors with <code>minSearchLength</code>, <code>textSearching</code> and <code>fillHighlighted\n\t= false</code></p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer\n\t\t\t\t\t\t[datasource]=\"'https://raw.githubusercontent.com/oferh/ng2-completer/master/demo/res/data/colors.json?'\"\n\t\t\t\t\t\t[minSearchLength]=\"1\" [placeholder]=\"'search color'\"\n\t\t\t\t\t\t[inputClass]=\"'form-control'\"\n\t\t\t\t\t\t[fillHighlighted]=\"false\"\n\t\t\t\t\t\t[(ngModel)]=\"color4\"\n\t\t\t\t\t\t[textSearching]=\"'Please wait...'\">\n\t\t\t\t</ng2-completer>\n\n\t\t\t</div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{color4}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n\n<h3>Events</h3>\n<p>Event triggering with <code>onBlur</code> and <code>onFocus</code> events.</p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer\n\t\t\t\t\t\t[datasource]=\"'https://raw.githubusercontent.com/oferh/ng2-completer/master/demo/res/data/colors.json?'\"\n\t\t\t\t\t\t[minSearchLength]=\"1\" [placeholder]=\"'search color'\"\n\t\t\t\t\t\t[inputClass]=\"'form-control'\"\n\t\t\t\t\t\t(focus)=\"focused = true; blurred = false;\"\n\t\t\t\t\t\t(blur)=\"focused = false; blurred = true;\"\n\t\t\t\t\t\t[fillHighlighted]=\"false\"\n\t\t\t\t\t\t[textSearching]=\"'Please wait...'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col\">\n\t\t\t\t<div class=\"alert alert-success\" role=\"alert\" *ngIf=\"focused\">\n\t\t\t\t\t<code>(focus)='...'</code> <b>onFocus</b> event emitted.\n\t\t\t\t</div>\n\t\t\t\t<div class=\"alert alert-success\" role=\"alert\" *ngIf=\"blurred\">\n\t\t\t\t\t<code>(blur)='...'</code> <b>onBlur</b> event emitted.\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Local data with initial value</h3>\n<p>Local data of colors with initial value - using <code>initialValue</code></p>\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-3\">\n\t\t\t\t<ng2-completer [datasource]=\"colors\" [(ngModel)]=\"color3\" [minSearchLength]=\"0\" [placeholder]=\"'search color'\" [initialValue]=\"'red'\">\n\t\t\t\t</ng2-completer>\n\t\t\t</div>\n\t\t\t<div class=\"col-2\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{color3}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<h3>Remote data with response formatter</h3>\n<p>\n    Remote data of countries with \n    <code>minSearchLength</code>\n    and <code>responseFormatter</code>\n</p>\n\n\n<div class=\"card\">\n\t<div class=\"card-block\">\n\t\t<div class=\"form-group row\">\n\t\t\t<div class=\"col-5\">\n\t\t\t\t<ng2-completer \n                    [dataService]=\"dataRemoteResponseFormatter\" \n                    [minSearchLength]=\"1\"\n                    [placeholder]=\"'Search for country'\"\n                    (selected)=\"onCountrySelectedResponseFormatter($event)\"\n                    [inputClass]=\"'form-control'\">\n\t\t\t\t</ng2-completer>\n            </div>\n\t\t\t<div class=\"col-6\">\n\t\t\t\t<p class=\"form-control-static\"><b> {{countryNameResponseFormatter}}</b></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<p style=\"margin-bottom: 10em;\"></p>"
 
 /***/ }),
 
-/***/ 60:
+/***/ 54:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ctr_completer__ = __webpack_require__(27);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrRowItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CtrDropdown; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ctr_completer__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2564,14 +2584,14 @@ CtrDropdown = __decorate([
 
 /***/ }),
 
-/***/ 61:
+/***/ 55:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(40);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterBaseData; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(36);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2632,6 +2652,9 @@ var CompleterBaseData = (function (_super) {
             originalObject: data
         };
     };
+    CompleterBaseData.prototype.responseFormatter = function (formatterFunction) {
+        this.formatterFunction = formatterFunction;
+    };
     CompleterBaseData.prototype.extractMatches = function (data, term) {
         var _this = this;
         var matches = [];
@@ -2684,7 +2707,20 @@ var CompleterBaseData = (function (_super) {
                 }
             }
         }
-        return results;
+        return this.executeFormatterFunction(results);
+    };
+    CompleterBaseData.prototype.executeFormatterFunction = function (data) {
+        try {
+            var fn = this.formatterFunction;
+            if (typeof fn !== 'undefined' && fn !== null) {
+                var temp = fn(data);
+                return temp;
+            }
+        }
+        catch (e) {
+            console.warn(e);
+        }
+        return data;
     };
     return CompleterBaseData;
 }(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__["Subject"]));
@@ -2693,14 +2729,14 @@ var CompleterBaseData = (function (_super) {
 
 /***/ }),
 
-/***/ 62:
+/***/ 56:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_data__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remote_data__ = __webpack_require__(64);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_data__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remote_data__ = __webpack_require__(58);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2754,15 +2790,15 @@ CompleterService = __decorate([
 
 /***/ }),
 
-/***/ 63:
+/***/ 57:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalData; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__completer_base_data__ = __webpack_require__(61);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalData; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__completer_base_data__ = __webpack_require__(55);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2829,17 +2865,17 @@ LocalData = __decorate([
 
 /***/ }),
 
-/***/ 64:
+/***/ 58:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__completer_base_data__ = __webpack_require__(61);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemoteData; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__completer_base_data__ = __webpack_require__(55);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2935,39 +2971,39 @@ var RemoteData = (function (_super) {
 
 /***/ }),
 
-/***/ 77:
+/***/ 71:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng2_completer_module__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng2_completer_module__ = __webpack_require__(118);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Ng2CompleterModule", function() { return __WEBPACK_IMPORTED_MODULE_0__ng2_completer_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_completer_cmp__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_completer_cmp__ = __webpack_require__(75);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CompleterCmp", function() { return __WEBPACK_IMPORTED_MODULE_1__components_completer_cmp__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_completer_list_item_cmp__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_completer_list_item_cmp__ = __webpack_require__(76);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CompleterListItemCmp", function() { return __WEBPACK_IMPORTED_MODULE_2__components_completer_list_item_cmp__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_completer_service__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_completer_service__ = __webpack_require__(56);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CompleterService", function() { return __WEBPACK_IMPORTED_MODULE_3__services_completer_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_completer_data_factory__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_completer_data_factory__ = __webpack_require__(80);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "localDataFactory", function() { return __WEBPACK_IMPORTED_MODULE_4__services_completer_data_factory__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "LocalDataFactoryProvider", function() { return __WEBPACK_IMPORTED_MODULE_4__services_completer_data_factory__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "remoteDataFactory", function() { return __WEBPACK_IMPORTED_MODULE_4__services_completer_data_factory__["d"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "RemoteDataFactoryProvider", function() { return __WEBPACK_IMPORTED_MODULE_4__services_completer_data_factory__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_local_data__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_local_data__ = __webpack_require__(57);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "LocalData", function() { return __WEBPACK_IMPORTED_MODULE_5__services_local_data__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_remote_data__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_remote_data__ = __webpack_require__(58);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "RemoteData", function() { return __WEBPACK_IMPORTED_MODULE_6__services_remote_data__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_completer_base_data__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_completer_base_data__ = __webpack_require__(55);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CompleterBaseData", function() { return __WEBPACK_IMPORTED_MODULE_7__services_completer_base_data__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ctr_completer__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ctr_completer__ = __webpack_require__(24);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CtrCompleter", function() { return __WEBPACK_IMPORTED_MODULE_8__directives_ctr_completer__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ctr_dropdown__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ctr_dropdown__ = __webpack_require__(54);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CtrDropdown", function() { return __WEBPACK_IMPORTED_MODULE_9__directives_ctr_dropdown__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_ctr_input__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_ctr_input__ = __webpack_require__(77);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CtrInput", function() { return __WEBPACK_IMPORTED_MODULE_10__directives_ctr_input__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_ctr_list__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_ctr_list__ = __webpack_require__(78);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CtrList", function() { return __WEBPACK_IMPORTED_MODULE_11__directives_ctr_list__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_ctr_row__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_ctr_row__ = __webpack_require__(79);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CtrRow", function() { return __WEBPACK_IMPORTED_MODULE_12__directives_ctr_row__["a"]; });
 
 
@@ -2986,18 +3022,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 85:
+/***/ 75:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_ctr_completer__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_completer_service__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterCmp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_ctr_completer__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_completer_service__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__);
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3323,12 +3359,12 @@ CompleterCmp = __decorate([
 
 /***/ }),
 
-/***/ 86:
+/***/ 76:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterListItemCmp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3399,17 +3435,17 @@ CompleterListItemCmp = __decorate([
 
 /***/ }),
 
-/***/ 87:
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrInput; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ctr_completer__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(40);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrInput; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ctr_completer__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(36);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3660,19 +3696,19 @@ CtrInput = __decorate([
 
 /***/ }),
 
-/***/ 88:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_observable_timer__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_observable_timer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_observable_timer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ctr_completer__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(40);
 /* unused harmony export CtrListContext */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrList; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_observable_timer__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_observable_timer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_observable_timer__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ctr_completer__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(36);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3912,13 +3948,13 @@ CtrList = __decorate([
 
 /***/ }),
 
-/***/ 89:
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ctr_dropdown__ = __webpack_require__(60);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrRow; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ctr_dropdown__ = __webpack_require__(54);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4009,17 +4045,17 @@ CtrRow = __decorate([
 
 /***/ }),
 
-/***/ 90:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_data__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remote_data__ = __webpack_require__(64);
 /* harmony export (immutable) */ __webpack_exports__["c"] = localDataFactory;
 /* harmony export (immutable) */ __webpack_exports__["d"] = remoteDataFactory;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalDataFactoryProvider; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return RemoteDataFactoryProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_data__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remote_data__ = __webpack_require__(58);
 
 
 
@@ -4039,4 +4075,4 @@ var RemoteDataFactoryProvider = { provide: __WEBPACK_IMPORTED_MODULE_2__remote_d
 
 /***/ })
 
-},[393]);
+},[260]);
