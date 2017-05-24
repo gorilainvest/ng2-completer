@@ -69,7 +69,6 @@ export class NativeCmp {
     private dataService2: CompleterData;
     private countryName2 = "";
     private countryNameResponseFormatter = "";
-//    private country3Description = "";
     private quote: string | undefined = "";
     private dataRemote: CompleterData;
     private dataRemote2: RemoteData;
@@ -156,10 +155,6 @@ export class NativeCmp {
 
     public onFocus() {
         this.openCloseExample.focus();
-    }
-    
-    public onResponseReady(data:any){
-        console.log(data);
     }
 
 }
