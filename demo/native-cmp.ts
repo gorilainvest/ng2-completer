@@ -68,7 +68,7 @@ export class NativeCmp {
     private dataService: CompleterData;
     private dataService2: CompleterData;
     private countryName2 = "";
-    private countryName3 = "";
+    private countryNameResponseFormatter = "";
 //    private country3Description = "";
     private quote: string | undefined = "";
     private dataRemote: CompleterData;
@@ -116,6 +116,14 @@ export class NativeCmp {
             return data;
         });
     }
+    
+    public onCountrySelectedResponseFormatter(selected: CompleterItem) {
+        if (selected) {
+            this.countryNameResponseFormatter = selected.title;
+        } else {
+            this.countryNameResponseFormatter = "";
+        }
+    }
 
     public onCountrySelected(selected: CompleterItem) {
         if (selected) {
@@ -125,14 +133,6 @@ export class NativeCmp {
         }
     }
     
-    public onCountrySelected2(selected: CompleterItem) {
-        if (selected) {
-            this.countryName3 = selected.title;
-        } else {
-            this.countryName3 = "";
-        }
-    }
-
     public onQuoteSelected(selected: CompleterItem) {
         if (selected) {
             this.quote = selected.description;
